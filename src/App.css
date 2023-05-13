@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+html {
+  font-family: "Poppins", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --font-size-xs: 10px;
+  --font-size-s: 12px;
+  --font-size-m: 14px;
+  --font-size-l: 24px;
+
+  --line-height-m: 16px;
+  --line-height-l: 32px;
+
+  --font-weight-m: 400;
+  --font-weight-l: 700;
+
+  --spacing-xtiny: 4px;
+  --spacing-tiny: 8px;
+  --spacing-small: 12px;
+  --spacing-mini: 16px;
+  --spacing-base: 24px;
+  --spacing-medium: 32px;
+  --spacing-large: 48px;
+
+  --rock-color: #b69e31;
+  --ghost-color: #70559b;
+  --steel-color: #b7b9d0;
+  --water-color: #6493eb;
+  --grass-color: #74cb48;
+  --psychic-color: #fb5584;
+  --ice-color: #9ad6df;
+  --dark-color: #75574c;
+  --fairy-color: #e69eac;
+  --normal-color: #aaa67f;
+  --fighting-color: #c12239;
+  --flying-color: #a891ec;
+  --poison-color: #a43e9e;
+  --ground-color: #dec16b;
+  --bug-color: #a7b723;
+  --fire-color: #f57d31;
+  --electric-color: #f9cf30;
+  --dragon-color: #7037ff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-container {
+  background-color: var(--grass-color);
+  height: 400px;
+  width: 300px;
+  border-radius: 12px;
 }
