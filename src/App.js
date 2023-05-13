@@ -17,8 +17,10 @@ function App() {
             <h5>Bulbasur</h5>
             <h6>#001</h6>
           </div>
-          <img className="card-image" alt="Imagen Bulbasur" src={bulbasur} />
           <div className="card-content">
+            <div className="image-wrapper">
+              <img alt="Imagen Bulbasur" src={bulbasur} />
+            </div>
             <div className="pokemon-type">
               <span className="pokemon-type-grass">Grass</span>
               <span className="pokemon-type-poison">Poison</span>
