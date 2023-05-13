@@ -19,14 +19,14 @@ function App() {
           </div>
           <img className="card-image" alt="Imagen Bulbasur" src={bulbasur} />
           <div className="card-content">
-            <div className="pokemon-type pokemon-type-font">
+            <div className="pokemon-type">
               <span className="pokemon-type-grass">Grass</span>
               <span className="pokemon-type-poison">Poison</span>
             </div>
-            <p>About</p>
+            <p className="pokemon-about">About</p>
             <div className="pokemon-measures">
-              <div className="pokemon-weight">
-                <div className="pokemon-weight-description">
+              <div>
+                <div>
                   <img
                     className="card-icon-measures"
                     alt="Imagen Weight"
@@ -34,11 +34,11 @@ function App() {
                   />
                   <span>6,9 kg</span>
                 </div>
-                <span>Weight</span>
+                <p>Weight</p>
               </div>
               <hr></hr>
-              <div className="pokemon-height">
-                <div className="pokemon-height-description">
+              <div>
+                <div>
                   <img
                     className="card-icon-measures"
                     alt="Imagen Height"
@@ -46,10 +46,10 @@ function App() {
                   />
                   <span>0,7 m</span>
                 </div>
-                <span>Height</span>
+                <p>Height</p>
               </div>
             </div>
-            <p>
+            <p class="pokemon-description">
               There is a plant seed on its back right from the day this Pokemon
               is born.
             </p>

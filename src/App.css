@@ -71,7 +71,7 @@ html {
 
 .card-content {
   height: 240px;
-  width: 290px;
+  margin: 0px var(--spacing-xtiny) var(--spacing-xtiny) var(--spacing-xtiny);
   background-color: var(--white);
   border-radius: 8px;
 }
@@ -86,4 +86,40 @@ html {
 
 .pokemon-type {
   color: var(--white);
+}
+
+.pokemon-type span {
+  font-size: var(--font-size-s);
+  line-height: var(--line-height-m);
+  font-weight: var(--font-weight-l);
+  border-radius: 10px;
+  padding: var(--spacing-xtiny) var(--spacing-tiny);
+}
+
+.pokemon-about {
+  font-size: var(--font-size-m);
+  line-height: var(--line-height-m);
+  font-weight: var(--font-weight-l);
+  color: var(--grass-color);
+}
+
+.pokemon-measures span {
+  font-size: var(--font-size-m);
+  line-height: var(--line-height-m);
+}
+
+.pokemon-measures p {
+  font-size: var(--font-size-s);
+  line-height: var(--line-height-m);
+  color: var(--medium-gray);
+}
+
+hr {
+  color: var(--light-gray);
+}
+
+.pokemon-description {
+  text-align: justify;
+  font-size: var(--font-size-s);
+  line-height: var(--line-height-m);
 }
