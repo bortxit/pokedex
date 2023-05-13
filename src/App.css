@@ -40,6 +40,12 @@ html {
   --fire-color: #f57d31;
   --electric-color: #f9cf30;
   --dragon-color: #7037ff;
+
+  --dark-gray: #212121;
+  --medium-gray: #666666;
+  --light-gray: #e0e0e0;
+  --white: #ffffff;
+  --background: #f7f7f7;
 }
 
 .card-container {
@@ -47,4 +53,37 @@ html {
   height: 400px;
   width: 300px;
   border-radius: 12px;
+  margin: auto;
+  text-align: center;
+}
+
+.card-title {
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-base) var(--spacing-base) 0px var(--spacing-base);
+}
+
+.card-image {
+  height: 150px;
+  width: 150px;
+}
+
+.card-content {
+  height: 240px;
+  width: 290px;
+  background-color: var(--white);
+  border-radius: 8px;
+}
+
+.pokemon-type-grass {
+  background-color: var(--grass-color);
+}
+
+.pokemon-type-poison {
+  background-color: var(--poison-color);
+}
+
+.pokemon-type {
+  color: var(--white);
 }
