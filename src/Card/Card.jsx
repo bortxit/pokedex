@@ -1,32 +1,48 @@
 import "./Card.css";
-import iconWeight from "./assets/icon-weight.svg";
-import iconHeight from "./assets/icon-height.svg";
+import iconWeight from "./../assets/icon-weight.svg";
+import iconHeight from "./../assets/icon-height.svg";
 
-function Card() {
+export const Card = () => {
+  const pokemon = {
+    id: "001",
+    name: "Bulbasur",
+    height: 4.3,
+    weight: 6.5,
+    types: ["grass", "poison"],
+    src: "./../assets/bulbasur.svg",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet facilisis mi. Integer eget urna eu mauris scelerisque ornare. Nam at finibus purus.",
+  };
+
   return (
     <div className="card">
       <div className="card__title">
-        <h5>Bulbasur</h5>
-        <h6>#001</h6>
+        <h5>{pokemon.name}</h5>
+        <h6>#{pokemon.id}</h6>
       </div>
       <div className="card__content">
         <div className="card__image-wrapper">
-          <img alt="Imagen Bulbasur" src="" />
+          <img alt={`Imagen ${pokemon.name}`} src={pokemon.src} />
         </div>
         <div className="card__content__types">
-          <span className="card__content__types__pills card__content__types__pill--grass">
-            Grass
-          </span>
-          <span className="card__content__types__pills card__content__types__pill--poison">
-            Poison
-          </span>
+          {pokemon.types.map((type) => {
+            return (
+              <span
+                className={`card__content__types__pills card__content__types__pill--${type}`}
+              >
+                {type}
+              </span>
+            );
+          })}
         </div>
         <p className="card__content__about">About</p>
         <div className="card__content__measures">
           <div>
             <div>
               <img alt="Imagen Weight" src={iconWeight} />
-              <span className="card__content__measures__data">6,9 kg</span>
+              <span className="card__content__measures__data">
+                {pokemon.weight} kg
+              </span>
             </div>
             <p className="card__content__measures__data-name">Weight</p>
           </div>
@@ -34,16 +50,15 @@ function Card() {
           <div>
             <div>
               <img alt="Imagen Height" src={iconHeight} />
-              <span className="card__content__measures__data">0,7 m</span>
+              <span className="card__content__measures__data">
+                {pokemon.height} m
+              </span>
             </div>
             <p className="card__content__measures__data-name">Height</p>
           </div>
         </div>
-        <p class="card__content__description">
-          There is a plant seed on its back right from the day this Pokemon is
-          born.
-        </p>
+        <p class="card__content__description">{pokemon.description}</p>
       </div>
     </div>
   );
-}
+};
