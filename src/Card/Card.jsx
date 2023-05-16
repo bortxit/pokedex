@@ -2,18 +2,7 @@ import "./Card.css";
 import iconWeight from "./../assets/icon-weight.svg";
 import iconHeight from "./../assets/icon-height.svg";
 
-export const Card = () => {
-  const pokemon = {
-    id: "001",
-    name: "Bulbasur",
-    height: 4.3,
-    weight: 6.5,
-    types: ["grass", "poison"],
-    src: "./../assets/bulbasur.svg",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet facilisis mi. Integer eget urna eu mauris scelerisque ornare. Nam at finibus purus.",
-  };
-
+export const Card = ({ pokemon }) => {
   return (
     <div className="card">
       <div className="card__title">
