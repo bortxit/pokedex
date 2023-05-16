@@ -22,10 +22,10 @@ function App() {
               <img alt="Imagen Bulbasur" src={bulbasur} />
             </div>
             <div className="card__content__types">
-              <span className="card__content__types__pills pokemon-type-grass">
+              <span className="card__content__types__pills card__content__types__pill--grass">
                 Grass
               </span>
-              <span className="card__content__types__pills pokemon-type-poison">
+              <span className="card__content__types__pills card__content__types__pill--poison">
                 Poison
               </span>
             </div>
