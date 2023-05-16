@@ -12,46 +12,42 @@ function App() {
         <nav>My Pokedex</nav>
       </header>
       <section>
-        <div className="card-container">
-          <div className="card-title">
+        <div className="card">
+          <div className="card__title">
             <h5>Bulbasur</h5>
             <h6>#001</h6>
           </div>
-          <div className="card-content">
-            <div className="image-wrapper">
+          <div className="card__content">
+            <div className="card__image-wrapper">
               <img alt="Imagen Bulbasur" src={bulbasur} />
             </div>
-            <div className="pokemon-type">
-              <span className="pokemon-type-grass">Grass</span>
-              <span className="pokemon-type-poison">Poison</span>
+            <div className="card__content__types">
+              <span className="card__content__types__pills pokemon-type-grass">
+                Grass
+              </span>
+              <span className="card__content__types__pills pokemon-type-poison">
+                Poison
+              </span>
             </div>
-            <p className="pokemon-about">About</p>
-            <div className="pokemon-measures">
+            <p className="card__content__about">About</p>
+            <div className="card__content__measures">
               <div>
                 <div>
-                  <img
-                    className="card-icon-measures"
-                    alt="Imagen Weight"
-                    src={iconWeight}
-                  />
-                  <span>6,9 kg</span>
+                  <img alt="Imagen Weight" src={iconWeight} />
+                  <span className="card__content__measures__data">6,9 kg</span>
                 </div>
-                <p>Weight</p>
+                <p className="card__content__measures__data-name">Weight</p>
               </div>
               <hr></hr>
               <div>
                 <div>
-                  <img
-                    className="card-icon-measures"
-                    alt="Imagen Height"
-                    src={iconHeight}
-                  />
-                  <span>0,7 m</span>
+                  <img alt="Imagen Height" src={iconHeight} />
+                  <span className="card__content__measures__data">0,7 m</span>
                 </div>
-                <p>Height</p>
+                <p className="card__content__measures__data-name">Height</p>
               </div>
             </div>
-            <p class="pokemon-description">
+            <p class="card__content__description">
               There is a plant seed on its back right from the day this Pokemon
               is born.
             </p>

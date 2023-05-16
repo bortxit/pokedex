@@ -48,7 +48,7 @@ html {
   --background: #f7f7f7;
 }
 
-.card-container {
+.card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -60,14 +60,14 @@ html {
   text-align: center;
 }
 
-.card-title {
+.card__title {
   color: var(--white);
   display: flex;
   justify-content: space-between;
   padding: var(--spacing-base) var(--spacing-base) 0px var(--spacing-base);
 }
 
-.image-wrapper {
+.card__image-wrapper {
   position: absolute;
   height: 150px;
   left: 0;
@@ -75,7 +75,7 @@ html {
   top: -100px;
 }
 
-.card-content {
+.card__content {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -88,11 +88,19 @@ html {
   background-color: var(--white);
 }
 
-.pokemon-type {
+.card__content__types {
   color: var(--white);
   display: flex;
   justify-content: center;
   gap: var(--spacing-mini);
+}
+
+.card__content__types__pills {
+  font-size: var(--font-size-s);
+  line-height: var(--line-height-m);
+  font-weight: var(--font-weight-l);
+  border-radius: 10px;
+  padding: var(--spacing-xtiny) var(--spacing-tiny);
 }
 
 .pokemon-type-grass {
@@ -103,27 +111,19 @@ html {
   background-color: var(--poison-color);
 }
 
-.pokemon-type span {
-  font-size: var(--font-size-s);
-  line-height: var(--line-height-m);
-  font-weight: var(--font-weight-l);
-  border-radius: 10px;
-  padding: var(--spacing-xtiny) var(--spacing-tiny);
-}
-
-.pokemon-about {
+.card__content__about {
   font-size: var(--font-size-m);
   line-height: var(--line-height-m);
   font-weight: var(--font-weight-l);
   color: var(--grass-color);
 }
 
-.pokemon-measures span {
+.card__content__measures__data {
   font-size: var(--font-size-m);
   line-height: var(--line-height-m);
 }
 
-.pokemon-measures p {
+.card__content__measures__data-name {
   font-size: var(--font-size-s);
   line-height: var(--line-height-m);
   color: var(--medium-gray);
@@ -134,13 +134,13 @@ hr {
   margin: 0px var(--spacing-base);
 }
 
-.pokemon-description {
+.card__content__description {
   text-align: justify;
   font-size: var(--font-size-s);
   line-height: var(--line-height-m);
 }
 
-.pokemon-measures {
+.card__content__measures {
   display: flex;
   justify-content: center;
 }
