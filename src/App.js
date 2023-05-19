@@ -2,32 +2,19 @@ import "./reset_style.css";
 import "./App.css";
 import { Card } from "./components/Card/Card";
 import { getPokemons } from "./services/PokeApiService";
+import { useEffect, useState } from "react";
 
 function App() {
-  const pokemons = [
-    {
-      id: "001",
-      name: "Bulbasur",
-      height: 4.3,
-      weight: 6.5,
-      types: ["grass", "poison"],
-      src: "./../assets/bulbasur.svg",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet facilisis mi. Integer eget urna eu mauris scelerisque ornare. Nam at finibus purus.",
-    },
-    {
-      id: "004",
-      name: "Charmander",
-      height: 0.6,
-      weight: 8.5,
-      types: ["fire"],
-      src: "./../assets/charmander.svg",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet facilisis mi. Integer eget urna eu mauris scelerisque ornare. Nam at finibus purus.",
-    },
-  ];
+  const [pokemons, setPokemons] = useState([]);
 
-  getPokemons();
+  useEffect(() => {
+    const fetchPokemons = async () => {
+      const pokemons = await getPokemons();
+      setPokemons(pokemons);
+    };
+
+    fetchPokemons();
+  }, []);
 
   return (
     <div className="App">
