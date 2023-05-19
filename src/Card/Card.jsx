@@ -1,10 +1,11 @@
 import "./Card.css";
 import iconWeight from "./../assets/icon-weight.svg";
 import iconHeight from "./../assets/icon-height.svg";
+import { Tag } from "../Tag/Tag";
 
 export const Card = ({ pokemon }) => {
   return (
-    <div className="card">
+    <div className={`card card-background-color--${pokemon.types[0]}`}>
       <div className="card__title">
         <h5>{pokemon.name}</h5>
         <h6>#{pokemon.id}</h6>
@@ -15,16 +16,12 @@ export const Card = ({ pokemon }) => {
         </div>
         <div className="card__content__types">
           {pokemon.types.map((type) => {
-            return (
-              <span
-                className={`card__content__types__pills card__content__types__pill--${type}`}
-              >
-                {type}
-              </span>
-            );
+            return <Tag type={type} />;
           })}
         </div>
-        <p className="card__content__about">About</p>
+        <p className={`card__content__about card-color--${pokemon.types[0]}`}>
+          About
+        </p>
         <div className="card__content__measures">
           <div>
             <div>

@@ -2,11 +2,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: var(--grass-color);
   height: 400px;
   width: 300px;
   border-radius: 12px;
-  margin: auto;
   text-align: center;
 }
 
@@ -53,19 +51,10 @@
   padding: var(--spacing-xtiny) var(--spacing-tiny);
 }
 
-.card__content__types__pill--grass {
-  background-color: var(--grass-color);
-}
-
-.card__content__types__pill--poison {
-  background-color: var(--poison-color);
-}
-
 .card__content__about {
   font-size: var(--font-size-m);
   line-height: var(--line-height-m);
   font-weight: var(--font-weight-l);
-  color: var(--grass-color);
 }
 
 .card__content__measures__data {

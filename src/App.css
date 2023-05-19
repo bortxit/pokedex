@@ -47,3 +47,113 @@ html {
   --white: #ffffff;
   --background: #f7f7f7;
 }
+
+.card-background-color--rock {
+  background-color: var(--rock-color);
+}
+.card-background-color--ghost {
+  background-color: var(--ghost-color);
+}
+.card-background-color--steel {
+  background-color: var(--steel-color);
+}
+.card-background-color--water {
+  background-color: var(--water-color);
+}
+.card-background-color--grass {
+  background-color: var(--grass-color);
+}
+.card-background-color--psychic {
+  background-color: var(--psychic-color);
+}
+.card-background-color--ice {
+  background-color: var(--ice-color);
+}
+.card-background-color--dark {
+  background-color: var(--dark-color);
+}
+.card-background-color--fairy {
+  background-color: var(--fairy-color);
+}
+.card-background-color--normal {
+  background-color: var(--normal-color);
+}
+.card-background-color--fighting {
+  background-color: var(--fighting-color);
+}
+.card-background-color--flying {
+  background-color: var(--flying-color);
+}
+.card-background-color--poison {
+  background-color: var(--poison-color);
+}
+.card-background-color--ground {
+  background-color: var(--ground-color);
+}
+.card-background-color--bug {
+  background-color: var(--bug-color);
+}
+.card-background-color--fire {
+  background-color: var(--fire-color);
+}
+.card-background-color--electric {
+  background-color: var(--electric-color);
+}
+.card-background-color--dragon {
+  background-color: var(--dragon-color);
+}
+
+.card-color--rock {
+  color: var(--rock-color);
+}
+.card-color--ghost {
+  color: var(--ghost-color);
+}
+.card-color--steel {
+  color: var(--steel-color);
+}
+.card-color--water {
+  color: var(--water-color);
+}
+.card-color--grass {
+  color: var(--grass-color);
+}
+.card-color--psychic {
+  color: var(--psychic-color);
+}
+.card-color--ice {
+  color: var(--ice-color);
+}
+.card-color--dark {
+  color: var(--dark-color);
+}
+.card-color--fairy {
+  color: var(--fairy-color);
+}
+.card-color--normal {
+  color: var(--normal-color);
+}
+.card-color--fighting {
+  color: var(--fighting-color);
+}
+.card-color--flying {
+  color: var(--flying-color);
+}
+.card-color--poison {
+  color: var(--poison-color);
+}
+.card-color--ground {
+  color: var(--ground-color);
+}
+.card-color--bug {
+  color: var(--bug-color);
+}
+.card-color--fire {
+  color: var(--fire-color);
+}
+.card-color--electric {
+  color: var(--electric-color);
+}
+.card-color--dragon {
+  color: var(--dragon-color);
+}
