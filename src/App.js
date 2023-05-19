@@ -1,6 +1,7 @@
 import "./reset_style.css";
 import "./App.css";
-import { Card } from "./Card/Card";
+import { Card } from "./components/Card/Card";
+import { getPokemons } from "./services/PokeApiService";
 
 function App() {
   const pokemons = [
@@ -25,6 +26,8 @@ function App() {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet facilisis mi. Integer eget urna eu mauris scelerisque ornare. Nam at finibus purus.",
     },
   ];
+
+  getPokemons();
 
   return (
     <div className="App">

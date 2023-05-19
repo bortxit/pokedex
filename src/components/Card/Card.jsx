@@ -1,6 +1,6 @@
 import "./Card.css";
-import iconWeight from "./../assets/icon-weight.svg";
-import iconHeight from "./../assets/icon-height.svg";
+import iconWeight from "./../../assets/icon-weight.svg";
+import iconHeight from "./../../assets/icon-height.svg";
 import { Tag } from "../Tag/Tag";
 
 export const Card = ({ pokemon }) => {
